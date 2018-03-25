@@ -1,5 +1,6 @@
 #include "utils.hpp"
 #include "chain.hpp"
+#include "crypto/crypto.hpp"
 #include <stdio.h>
 
 // class Chain {
