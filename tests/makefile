@@ -1,7 +1,7 @@
 CC = g++
 FLAGS = -std=c++11 -std=gnu++11 -Wall
 INCLUDES = -I../src -I../includes
-LIBRARIES = -L../lib -lcrypto -lgtest
+LIBRARIES = -L../lib -lpthread -lm -lcrypto -lgtest
 NAME = runTests
 
 FILES = ../src/utils.cpp ../src/block.cpp ../src/chain.cpp

@@ -26,7 +26,7 @@ TEST_F(chainTest, constructor) {
 TEST_F(chainTest, GenesisBlock) {
   struct Block genesis = blockchain.getGenesis();
   ASSERT_EQ(genesis.timestamp, 0);
-  ASSERT_EQ(genesis.hash, 0);
+  ASSERT_EQ(atoi(genesis.hash.c_str()), 0);
   ASSERT_STREQ(genesis.previous.c_str(), GenesisBlock.previous.c_str());
   ASSERT_STREQ(genesis.data.c_str(), GenesisBlock.data.c_str());
 }

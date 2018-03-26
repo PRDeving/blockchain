@@ -1,3 +1,4 @@
+#include "crypto/crypto.hpp"
 #include "chain.hpp"
 #include "utils.hpp"
 
